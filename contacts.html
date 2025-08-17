@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | Зв'яжіться з нами</title>
+    
+    <!-- Підключення Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Підключення шрифтів Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (такий самий, як на інших сторінках) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./index.html" class="text-2xl font-bold text-gray-900">Логотип</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="./services.html" class="text-gray-600 hover:text-blue-600 transition">Послуги</a>
+                <a href="./about.html" class="text-gray-600 hover:text-blue-600 transition">Про нас</a>
+                <a href="./projects.html" class="text-gray-600 hover:text-blue-600 transition">Проєкти</a>
+                <a href="./reviews.html" class="text-gray-600 hover:text-blue-600 transition">Відгуки</a>
+                <a href="./blog.html" class="text-gray-600 hover:text-blue-600 transition">Блог</a>
+                <a href="#" class="text-blue-600 font-semibold">Контакти</a>
+            </div>
+            <a href="#" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                +38 (099) 123-45-67
+            </a>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="bg-blue-600 py-12 md:py-20">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold">Зв'яжіться з нами</h1>
+                <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto">Ми завжди готові відповісти на ваші запитання та обговорити майбутній проєкт.</p>
+            </div>
+        </section>
+
+        <!-- 2. Contact Details & Form Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg order-2 lg:order-1">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Надішліть нам повідомлення</h2>
+                        <form>
+                            <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-semibold mb-2">Ваше ім'я</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Іван Петренко" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-semibold mb-2">Номер телефону</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+38 (0XX) XXX-XX-XX" required>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your.email@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-semibold mb-2">Повідомлення</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Розкажіть коротко про ваше завдання..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition">Надіслати</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Map -->
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Наші контакти</h2>
+                        <div class="space-y-4 text-lg text-gray-700">
+                            <p class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 mt-1 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                <span>м. Івано-Франківськ, вул. Прикладна, 1, офіс 205</span>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                <a href="tel:+380991234567" class="hover:text-blue-600">+38 (099) 123-45-67</a>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                <a href="mailto:info@vash-site.com" class="hover:text-blue-600">info@vash-site.com</a>
+                            </p>
+                        </div>
+                        <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.302324021287!2d24.70891461567954!3d48.9215039792937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16c34b3609b%3A0x1c3de34104273c2a!2z0JDRgNC80LDRgtC40YfQutC-0LLRgdC60LDRjyDRg9C7Liwg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstC6LCDQstC-0YDQvtC_0LDRgNC90ZYg0L7QsdC70LDRgdGC0YwsINCj0L3RgyDQodGC0LDRgNGM0LrQvtCz0L4!5e0!3m2!1suk!2sua!4v1678886400000!5m2!1suk!2sua" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (такий самий, як на інших сторінках) -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Логотип</h3>
+                    <p class="text-gray-400">© 2025 [Назва компанії]. Всі права захищено.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Навігація</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./services.html" class="text-gray-400 hover:text-white transition">Послуги</a></li>
+                        <li><a href="./about.html" class="text-gray-400 hover:text-white transition">Про нас</a></li>
+                        <li><a href="./projects.html" class="text-gray-400 hover:text-white transition">Проєкти</a></li>
+                        <li><a href="./reviews.html" class="text-gray-400 hover:text-white transition">Відгуки</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакти</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>+38 (099) 123-45-67</li>
+                        <li>info@[vash-site].com</li>
+                        <li>м. Івано-Франківськ, вул. Прикладна, 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Ми в соцмережах</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c-4.068 0-7.38 3.312-7.38 7.38 0 3.213 2.07 5.942 4.965 6.95.362.066.495-.157.495-.348 0-.172-.006-.627-.01-1.228-2.01.436-2.433-.965-2.433-.965-.328-.833-.8-1.054-.8-1.054-.656-.448.05-.438.05-.438.725.05 1.106.743 1.106.743.644 1.103 1.69  .783 2.102.598.066-.465.252-.783.46- .962-1.604-.182-3.29- .802-3.29-3.568 0-.788.282-1.432.744-1.938-.074-.183-.323-.917.07-1.912 0 0 .606-.194 1.986.74.576-.16 1.192-.24 1.808-.243.616 0 1.232.083 1.808.243 1.38- .934 1.986-.74 1.986-.74.394.995.145 1.73.07 1.912.463.506.743 1.15.743 1.938 0 2.774-1.688 3.384-3.298 3.562.258.22.49.658.49 1.326 0 .956-.01 1.728-.01 1.962 0 .193.132.417.5.348 2.893-1.01 4.96-3.738 4.96-6.95C19.695 5.312 16.383 2 12.315 2z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
