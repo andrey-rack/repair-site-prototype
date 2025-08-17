@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас | Команда професіоналів</title>
+    
+    <!-- Підключення Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Підключення шрифтів Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-about {
+            background-image: url('https://placehold.co/1920x600/e2e8f0/334155?text=Наша+команда');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header (такий самий, як на інших сторінках) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./index.html" class="text-2xl font-bold text-gray-900">Логотип</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="./services.html" class="text-gray-600 hover:text-blue-600 transition">Послуги</a>
+                <a href="#" class="text-blue-600 font-semibold">Про нас</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">Проєкти</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">Блог</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">Контакти</a>
+            </div>
+            <a href="#" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                +38 (099) 123-45-67
+            </a>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-bg-about h-[50vh] flex items-center justify-center relative">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-6 text-center text-white relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold">Люди, які створюють ваш затишок</h1>
+                <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto">Ми — команда досвідчених майстрів, об'єднаних спільною метою: робити якісні та довговічні ремонти.</p>
+            </div>
+        </section>
+
+        <!-- 2. Company History -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Наша історія: від мрії до реальності</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Все почалося у 2010 році з невеликої бригади ентузіастів, які хотіли змінити уявлення про ремонт. Ми втомилися від халтури та недотримання термінів, тому вирішили створити компанію, де якість, чесність та повага до клієнта є головними пріоритетами.</p>
+                    <p class="text-gray-600 leading-relaxed">Сьогодні, через роки наполегливої праці, ми маємо за плечима сотні успішних проєктів та вдячних клієнтів. Але наші принципи залишаються незмінними: ми працюємо на совість, як для себе.</p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x450/e2e8f0/334155?text=Перший+об\'єкт" alt="Фото першого об'єкта" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Values -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Наші цінності</h2>
+                    <p class="text-gray-600 mt-2">Три кити, на яких тримається наша робота.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Value Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/80x80/3b82f6/ffffff?text=🎯" class="mx-auto mb-4" alt="Іконка якості">
+                        <h3 class="text-xl font-semibold mb-2">Якість без компромісів</h3>
+                        <p class="text-gray-600">Ми використовуємо лише перевірені матеріали та суворо дотримуємось технологій на кожному етапі робіт.</p>
+                    </div>
+                    <!-- Value Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/80x80/3b82f6/ffffff?text=🤝" class="mx-auto mb-4" alt="Іконка чесності">
+                        <h3 class="text-xl font-semibold mb-2">Чесність та прозорість</h3>
+                        <p class="text-gray-600">Наш кошторис завжди детальний і зрозумілий. Жодних прихованих платежів та несподіваних витрат.</p>
+                    </div>
+                    <!-- Value Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <img src="https://placehold.co/80x80/3b82f6/ffffff?text=💡" class="mx-auto mb-4" alt="Іконка відповідальності">
+                        <h3 class="text-xl font-semibold mb-2">Відповідальність</h3>
+                        <p class="text-gray-600">Ми несемо повну відповідальність за результат і надаємо гарантію на всі виконані роботи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Team -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ключові спеціалісти</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/300x300/e0e7ff/4338ca?text=Фото" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg" alt="Фото співробітника">
+                        <h3 class="text-xl font-semibold text-gray-900">Андрій Петренко</h3>
+                        <p class="text-gray-500">Керівник проєктів</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/300x300/e0e7ff/4338ca?text=Фото" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg" alt="Фото співробітника">
+                        <h3 class="text-xl font-semibold text-gray-900">Іван Ковальчук</h3>
+                        <p class="text-gray-500">Головний майстер-плиточник</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/300x300/e0e7ff/4338ca?text=Фото" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg" alt="Фото співробітника">
+                        <h3 class="text-xl font-semibold text-gray-900">Сергій Мельник</h3>
+                        <p class="text-gray-500">Спеціаліст з сантехніки</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="text-center">
+                        <img src="https://placehold.co/300x300/e0e7ff/4338ca?text=Фото" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg" alt="Фото співробітника">
+                        <h3 class="text-xl font-semibold text-gray-900">Олена Шевченко</h3>
+                        <p class="text-gray-500">Менеджер по роботі з клієнтами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA Section -->
+        <section class="py-16 md:py-24 bg-blue-600">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Хочете познайомитись ближче?</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">Запрошуємо на каву до нашого офісу, щоб обговорити ваш майбутній проєкт та відповісти на всі запитання.</p>
+                <a href="#" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105">
+                    Перейти до контактів
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (такий самий, як на інших сторінках) -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Логотип</h3>
+                    <p class="text-gray-400">© 2025 [Назва компанії]. Всі права захищено.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Навігація</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./services.html" class="text-gray-400 hover:text-white transition">Послуги</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Про нас</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Проєкти</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Контакти</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакти</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>+38 (099) 123-45-67</li>
+                        <li>info@[vash-site].com</li>
+                        <li>м. Івано-Франківськ, вул. Прикладна, 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Ми в соцмережах</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c-4.068 0-7.38 3.312-7.38 7.38 0 3.213 2.07 5.942 4.965 6.95.362.066.495-.157.495-.348 0-.172-.006-.627-.01-1.228-2.01.436-2.433-.965-2.433-.965-.328-.833-.8-1.054-.8-1.054-.656-.448.05-.438.05-.438.725.05 1.106.743 1.106.743.644 1.103 1.69  .783 2.102.598.066-.465.252-.783.46- .962-1.604-.182-3.29- .802-3.29-3.568 0-.788.282-1.432.744-1.938-.074-.183-.323-.917.07-1.912 0 0 .606-.194 1.986.74.576-.16 1.192-.24 1.808-.243.616 0 1.232.083 1.808.243 1.38- .934 1.986-.74 1.986-.74.394.995.145 1.73.07 1.912.463.506.743 1.15.743 1.938 0 2.774-1.688 3.384-3.298 3.562.258.22.49.658.49 1.326 0 .956-.01 1.728-.01 1.962 0 .193.132.417.5.348 2.893-1.01 4.96-3.738 4.96-6.95C19.695 5.312 16.383 2 12.315 2z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
