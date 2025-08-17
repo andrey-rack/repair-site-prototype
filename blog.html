@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог про ремонт | Поради та ідеї</title>
+    
+    <!-- Підключення Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Підключення шрифтів Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg-blog {
+            background-image: url('https://placehold.co/1920x600/e2e8f0/334155?text=Корисні+статті');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header (такий самий, як на інших сторінках) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="./index.html" class="text-2xl font-bold text-gray-900">Логотип</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="./services.html" class="text-gray-600 hover:text-blue-600 transition">Послуги</a>
+                <a href="./about.html" class="text-gray-600 hover:text-blue-600 transition">Про нас</a>
+                <a href="./projects.html" class="text-gray-600 hover:text-blue-600 transition">Проєкти</a>
+                <a href="./reviews.html" class="text-gray-600 hover:text-blue-600 transition">Відгуки</a>
+                <a href="#" class="text-blue-600 font-semibold">Блог</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">Контакти</a>
+            </div>
+            <a href="#" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                +38 (099) 123-45-67
+            </a>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-bg-blog h-[50vh] flex items-center justify-center relative">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-6 text-center text-white relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold">Наш Блог</h1>
+                <p class="text-lg md:text-xl mt-4 max-w-3xl mx-auto">Ділимося досвідом, порадами та ідеями зі світу ремонту та дизайну інтер'єрів.</p>
+            </div>
+        </section>
+
+        <!-- 2. Blog Content Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <!-- Category Filters -->
+                <div class="flex justify-center flex-wrap gap-2 md:gap-4 mb-12">
+                    <button class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold">Всі статті</button>
+                    <button class="bg-gray-200 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-300 transition">Плитка</button>
+                    <button class="bg-gray-200 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-300 transition">Ремонт</button>
+                    <button class="bg-gray-200 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-300 transition">Поради</button>
+                    <button class="bg-gray-200 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-300 transition">Дизайн</button>
+                </div>
+
+                <!-- Articles Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Article Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Плитка" class="w-full h-56 object-cover" alt="Як обрати плитку">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Плитка</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">Як обрати плитку для кухні: 5 ключових критеріїв</h3>
+                                <p class="text-gray-600 text-sm">Розповідаємо, на що звернути увагу, щоб покриття було не тільки красивим, але й практичним...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Article Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=План" class="w-full h-56 object-cover" alt="Помилки ремонту">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Ремонт</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">Топ-5 помилок при плануванні ремонту</h3>
+                                <p class="text-gray-600 text-sm">Дізнайтеся, як уникнути найпоширеніших проблем та заощадити час і гроші на переробках...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Article Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Ванна" class="w-full h-56 object-cover" alt="Тренди дизайну">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Дизайн</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">Сучасні тренди в дизайні ванних кімнат 2025</h3>
+                                <p class="text-gray-600 text-sm">Огляд найактуальніших ідей та рішень для вашого ідеального простору: кольори, матеріали, сантехніка...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Article Card 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Інструменти" class="w-full h-56 object-cover" alt="Етапи ремонту">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Поради</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">З чого почати ремонт у новобудові: покроковий план</h3>
+                                <p class="text-gray-600 text-sm">Детальна інструкція для тих, хто отримав ключі від нової квартири і не знає, за що хапатися...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Article Card 5 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Затирання" class="w-full h-56 object-cover" alt="Затирання швів">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Плитка</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">Епоксидна чи цементна затирка: що обрати?</h3>
+                                <p class="text-gray-600 text-sm">Порівнюємо два популярні види затирки для плитки, їхні переваги та недоліки...</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Article Card 6 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                        <a href="#" class="block">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Стіни" class="w-full h-56 object-cover" alt="Оздоблення стін">
+                            <div class="p-6">
+                                <p class="text-sm text-blue-600 font-semibold mb-1">Ремонт</p>
+                                <h3 class="text-xl font-semibold mb-2 text-gray-900 group-hover:text-blue-700 transition">Фарбування чи шпалери: що краще для стін?</h3>
+                                <p class="text-gray-600 text-sm">Аналізуємо плюси та мінуси найпопулярніших видів оздоблення стін у квартирі...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-12">
+                    <nav class="flex items-center space-x-2">
+                        <a href="#" class="px-4 py-2 bg-white border rounded-md text-gray-500">«</a>
+                        <a href="#" class="px-4 py-2 bg-blue-600 text-white border border-blue-600 rounded-md">1</a>
+                        <a href="#" class="px-4 py-2 bg-white border rounded-md hover:bg-gray-100">2</a>
+                        <a href="#" class="px-4 py-2 bg-white border rounded-md hover:bg-gray-100">3</a>
+                        <a href="#" class="px-4 py-2 bg-white border rounded-md text-gray-500">»</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CTA Section -->
+        <section class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-6 text-center max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Підпишіться на наші новини</h2>
+                <p class="text-lg text-gray-600 mb-8">Отримуйте свіжі статті, поради та спеціальні пропозиції першими прямо на вашу пошту.</p>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Ваш Email" class="flex-grow px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Підписатися</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (такий самий, як на інших сторінках) -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Логотип</h3>
+                    <p class="text-gray-400">© 2025 [Назва компанії]. Всі права захищено.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Навігація</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./services.html" class="text-gray-400 hover:text-white transition">Послуги</a></li>
+                        <li><a href="./about.html" class="text-gray-400 hover:text-white transition">Про нас</a></li>
+                        <li><a href="./projects.html" class="text-gray-400 hover:text-white transition">Проєкти</a></li>
+                        <li><a href="./reviews.html" class="text-gray-400 hover:text-white transition">Відгуки</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакти</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>+38 (099) 123-45-67</li>
+                        <li>info@[vash-site].com</li>
+                        <li>м. Івано-Франківськ, вул. Прикладна, 1</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Ми в соцмережах</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c-4.068 0-7.38 3.312-7.38 7.38 0 3.213 2.07 5.942 4.965 6.95.362.066.495-.157.495-.348 0-.172-.006-.627-.01-1.228-2.01.436-2.433-.965-2.433-.965-.328-.833-.8-1.054-.8-1.054-.656-.448.05-.438.05-.438.725.05 1.106.743 1.106.743.644 1.103 1.69  .783 2.102.598.066-.465.252-.783.46- .962-1.604-.182-3.29- .802-3.29-3.568 0-.788.282-1.432.744-1.938-.074-.183-.323-.917.07-1.912 0 0 .606-.194 1.986.74.576-.16 1.192-.24 1.808-.243.616 0 1.232.083 1.808.243 1.38- .934 1.986-.74 1.986-.74.394.995.145 1.73.07 1.912.463.506.743 1.15.743 1.938 0 2.774-1.688 3.384-3.298 3.562.258.22.49.658.49 1.326 0 .956-.01 1.728-.01 1.962 0 .193.132.417.5.348 2.893-1.01 4.96-3.738 4.96-6.95C19.695 5.312 16.383 2 12.315 2z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
